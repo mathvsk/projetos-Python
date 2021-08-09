@@ -1,10 +1,7 @@
 while True:
-    idade = int(input('Qual sua idade? '))
-    if not idade:
+    nota = int(input('Digite uma nota entre 0 e 10'))
+    if nota < 0 or nota > 10:
+        print('Valor inválido')
+    else:
+        print('Tudo certo')
         break
-    sexo = str(input('Qual é seu sexo [M/F]? '))
-    if sexo == 'M' or sexo == 'm':
-        print('Boa noite Senhor, sua idade é {} anos'.format(idade))
-    elif sexo == 'F' or sexo == 'f':
-        print('Boa noite Senhora, sua idade é {} anos'.format(idade))
-print('Encerrando...')
